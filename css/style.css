@@ -1,0 +1,194 @@
+/*
+  If you get stuck, feel free to watch the follow-up videos where I'll show you one solution
+*/
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+h2 {
+  text-align: left;
+  padding-top: 25px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-nav { 
+  padding-bottom: 10px; 
+}
+
+.main-nav li { 
+  text-align: center; 
+  padding: 5px; 
+}
+
+.name {
+	font-size: 1.25em;
+  margin: 0;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.name,
+.main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.name a,
+.main-nav a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+
+	.main-nav a {
+		font-size: .95em;
+		color: black;
+		text-transform: uppercase;
+	}
+	
+	.main-nav a:hover {
+		color: red;
+	}
+
+
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.main-header {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background: #fff;
+}
+
+.main-footer {
+	text-align: center;
+	padding: 2em 0;
+	background: #d9e4ea;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+  
+}
+
+/* ================================= 
+  Columns
+==================================== */
+
+.col {
+		float: left;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+.primary {
+  width: 33.3%;
+}
+
+.secondary {
+  width: 33.3%;
+}
+
+.tertiary {
+  width: 33.3%;
+}
+
+.headline {
+  margin-bottom: 0;
+ }
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+.name {
+  float: left;
+}
+
+.main-nav li {
+  float: left;
+  display: inline-block;
+}
+
+.main-nav {
+		float: right;
+	}
+
+.banner { 
+  padding-bottom: 20px; 
+}
+
+}
